@@ -11,10 +11,11 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 
 app.use(cors({
-  origin: "http://localhost:5173", 
+  origin: "https://urlshortner-1-pory.onrender.com",  
   methods: ["GET", "POST"],
   credentials: true
 }));
+
 
 app.use(express.json());
 
